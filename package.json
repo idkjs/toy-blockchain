@@ -1,0 +1,24 @@
+{
+  "name": "toy-blockchain",
+  "scripts": {
+    "run-node": "esy dune exec ./node.exe -- -p",
+    "build": "esy b dune build @all",
+    "watch": "esy b dune build @all -w",
+    "start": "esy b dune exec ./crud.exe"
+  },
+  "dependencies": {
+    "@opam/cohttp-lwt-unix": "*",
+    "@opam/core": "*",
+    "@opam/dune": "*",
+    "@opam/opium": "*",
+    "@opam/ppx_deriving_yojson": "*",
+    "@opam/sha": "1.14",
+    "@opam/uuidm": "*",
+    "ocaml": "4.12.x"
+  },
+  "devDependencies": {
+    "@opam/ocaml-lsp-server": "*",
+    "@opam/ocamlformat": "*",
+    "@opam/reason": "*"
+  }
+}
